@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLUNTEER REG Form</title>
+    <link rel="stylesheet" href="../css/volunteer-register.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <script src="../javascript/volunteer-register.js"></script>
+    <form action="../admin-panel/volunteers/volunteer-register.php" method="post" class="form" id="form">
+    <div class="wrapper">
+        <div class="title">
+            <h2>VOLUNTEER REGISTRATION FORM</h2>
+        </div>
+        <div class="form">
+            <div class="inputfield">
+                Farmer Register here <a href="../templates/farmer-register.html">Register here</a>
+            </div>
+
+            <div class="inputfield">
+                <label>FULL Name</label>
+                <input type="text" name="name" id="firstName" class="input" required>
+            </div>
+
+            <div class="inputfield">
+                <label>Gender</label>
+                <div class="custom_select">
+                    <select  name="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="female">Others</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>DATE OF BIRTH</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="inputfield">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" type="text" id="email" class="input">
+            </div>
+            <div class="inputfield">
+                <label for="password">PASSWORD</label>
+                <input name="password" name="password" id="password" class="input" id="password">
+            </div>
+
+            <div class="inputfield" required>
+                <label>STATE</label>
+                <div class="custom_select">
+                    <select id="country-state" name="country-state" class="input">
+                        <option value="">Select state</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="LA">Ladakh</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PY">Puducherry</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="WB">West Bengal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputfield">
+                <label> DISTRICT </label>
+                <div class="custom_select">
+                    <select id="city" name="city" class="input">
+                        <option value="">Select district</option>
+                        <option value="Amalapuramu">Amalapuramu</option>
+                        <option value="Anakapalli">Anakapalli</option>
+                        <option value="West Godavari">West Godavari</option>
+                        <option value="	Bapatla">Bapatla</option>
+                        <option value="Srikakulam">Srikakulam</option>
+                        <option value="Parvathipuram Manyam">Parvathipuram Manyam</option>
+                        <option value="Vizianagaram">Vizianagaram</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Alluri Sitharama Raju">Alluri Sitharama Raju</option>
+                        <option value="	Kakinada"> Kakinada</option>
+                        <option value="East Godavari">East Godavari</option>
+                        <option value="Konaseema">Konaseema</option>
+                        <option value="Eluru">Eluru</option>
+                        <option value="NTR">NTR</option>
+                        <option value="Krishna">Krishna</option>
+                        <option value="Palnadu">Palnadu</option>
+                        <option value="Guntur">Guntur</option>
+                        <option value="Bapatla">Bapatla</option>
+                        <option value="Prakasam">Prakasam</option>
+                        <option value="Nellore">Nellore</option>
+                        <option value="Kurnool">Kurnool</option>
+                        <option value="Nandyala">Nandyala</option>
+                        <option value="	Anantapuramu"> Anantapuramu</option>
+                        <option value="	Sri Sathya Sai"> Sri Sathya Sai</option>
+                        <option value="YSR Kadapa">YSR Kadapa</option>
+                        <option value="Annamayya">Annamayya</option>
+                        <option value="Tirupati">Tirupati</option>
+                        <option value="Chittoor">Chittoor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputfield">
+                <label> SUB DISTRICT </label>
+                <div class="custom_select1">
+                    <select id="city" name="sub-district" class="input">
+                        <option value="">Select City</option>
+                        <option value="Addanki">Addanki</option>
+                        <option value="Adoni">Adoni</option>
+                        <option value="Akasahebpet">Akasahebpet</option>
+                        <option value="Akividu">Akividu</option>
+                        <option value="Akkarampalle">Akkarampalle</option>
+                        <option value="Amalapuram">Amalapuram</option>
+                        <option value="Amudalavalasa">Amudalavalasa</option>
+                        <option value="Anakapalle">Anakapalle</option>
+                        <option value="Anantapur">Anantapur</option>
+                        <option value="Atmakur">Atmakur</option>
+                        <option value="Attili">Attili</option>
+                        <option value="Avanigadda">Avanigadda</option>
+                        <option value="Badvel">Badvel</option>
+                        <option value="Banganapalle">Banganapalle</option>
+                        <option value="Bapatla">Bapatla</option>
+                        <option value="Betamcherla">Betamcherla</option>
+                        <option value="Bhattiprolu">Bhattiprolu</option>
+                        <option value="Bhimavaram">Bhimavaram</option>
+                        <option value="Bhimunipatnam">Bhimunipatnam</option>
+                        <option value="Bobbili">Bobbili</option>
+                        <option value="Challapalle">Challapalle</option>
+                        <option value="Chemmumiahpet">Chemmumiahpet</option>
+                        <option value="Chilakalurupet">Chilakalurupet</option>
+                        <option value="Chinnachowk">Chinnachowk</option>
+                        <option value="Chipurupalle">Chipurupalle</option>
+                        <option value="Chirala">Chirala</option>
+                        <option value="Chittoor">Chittoor</option>
+                        <option value="Chodavaram">Chodavaram</option>
+                        <option value="Cuddapah">Cuddapah</option>
+                        <option value="Cumbum">Cumbum</option>
+                        <option value="Darsi">Darsi</option>
+                        <option value="Dharmavaram">Dharmavaram</option>
+                        <option value="Dhone">Dhone</option>
+                        <option value="Diguvametta">Diguvametta</option>
+                        <option value="East Godavari">East Godavari</option>
+                        <option value="Elamanchili">Elamanchili</option>
+                        <option value="Ellore">Ellore</option>
+                        <option value="Emmiganur">Emmiganur</option>
+                        <option value="Erraguntla">Erraguntla</option>
+                        <option value="Etikoppaka">Etikoppaka</option>
+                        <option value="Gajuwaka">Gajuwaka</option>
+                        <option value="Ganguvada">Ganguvada</option>
+                        <option value="Gannavaram">Gannavaram</option>
+                        <option value="Giddalur">Giddalur</option>
+                        <option value="Gokavaram">Gokavaram</option>
+                        <option value="Gorantla">Gorantla</option>
+
+                        <option value="Gudivada">Gudivada</option>
+                        <option value="Gudlavalleru">Gudlavalleru</option>
+                        <option value="Gudur">Gudur</option>
+                        <option value="Guntakal Junction">Guntakal Junction</option>
+                        <option value="Guntur">Guntur</option>
+                        <option value="Hindupur">Hindupur</option>
+                        <option value="Ichchapuram">Ichchapuram</option>
+                        <option value="Jaggayyapeta">Jaggayyapeta</option>
+                        <option value="Jammalamadugu">Jammalamadugu</option>
+                        <option value="Kadiri">Kadiri</option>
+                        <option value="Kaikalur">Kaikalur</option>
+                        <option value="Kakinada">Kakinada</option>
+                        <option value="Kalyandurg">Kalyandurg</option>
+                        <option value="Kamalapuram">Kamalapuram</option>
+                        <option value="Kandukur">Kandukur</option>
+                        <option value="Kanigiri">Kanigiri</option>
+                        <option value="Kankipadu">Kankipadu</option>
+                        <option value="Kanuru">Kanuru</option>
+                        <option value="Kavali">Kavali</option>
+                        <option value="Kolanukonda">Kolanukonda</option>
+                        <option value="Kondapalle">Kondapalle</option>
+                        <option value="Korukollu">Korukollu</option>
+                        <option value="Kosigi">Kosigi</option>
+                        <option value="Kovvur">Kovvur</option>
+                        <option value="Krishna">Krishna</option>
+                        <option value="Kuppam">Kuppam</option>
+                        <option value="Kurnool">Kurnool</option>
+                        <option value="Macherla">Macherla</option>
+                        <option value="Machilipatnam">Machilipatnam</option>
+                        <option value="Madanapalle">Madanapalle</option>
+                        <option value="Madugula">Madugula</option>
+                        <option value="Mandapeta">Mandapeta</option>
+                        <option value="Mandasa">Mandasa</option>
+                        <option value="Mangalagiri">Mangalagiri</option>
+                        <option value="Markapur">Markapur</option>
+                        <option value="Nagari">Nagari</option>
+                        <option value="Nagireddipalli">Nagireddipalli</option>
+                        <option value="Nandigama">Nandigama</option>
+                        <option value="Nandikotkur">Nandikotkur</option>
+                        <option value="Nandyal">Nandyal</option>
+                        <option value="Narasannapeta">Narasannapeta</option>
+                        <option value="Narasapur">Narasapur</option>
+                        <option value="Narasaraopet">Narasaraopet</option>
+                        <option value="Narasingapuram">Narasingapuram</option>
+                        <option value="Narayanavanam">Narayanavanam</option>
+                        <option value="Narsipatnam">Narsipatnam</option>
+                        <option value="Nayudupet">Nayudupet</option>
+                        <option value="Nellore">Nellore</option>
+                        <option value="Nidadavole">Nidadavole</option>
+                        <option value="Nuzvid">Nuzvid</option>
+                        <option value="Ongole">Ongole</option>
+                        <option value="Pakala">Pakala</option>
+                        <option value="Palakollu">Palakollu</option>
+                        <option value="Palasa">Palasa</option>
+                        <option value="Palkonda">Palkonda</option>
+                        <option value="Pallevada">Pallevada</option>
+                        <option value="Palmaner">Palmaner</option>
+                        <option value="Parlakimidi">Parlakimidi</option>
+                        <option value="Parvatipuram">Parvatipuram</option>
+                        <option value="Pavuluru">Pavuluru</option>
+                        <option value="Pedana">Pedana</option>
+                        <option value="pedda nakkalapalem">pedda nakkalapalem</option>
+                        <option value="Peddapuram">Peddapuram</option>
+                        <option value="Penugonda">Penugonda</option>
+                        <option value="Penukonda">Penukonda</option>
+                        <option value="Phirangipuram">Phirangipuram</option>
+                        <option value="Pippara">Pippara</option>
+                        <option value="Pithapuram">Pithapuram</option>
+                        <option value="Polavaram">Polavaram</option>
+                        <option value="Ponnur">Ponnur</option>
+                        <option value="Ponnuru">Ponnuru</option>
+                        <option value="Prakasam">Prakasam</option>
+                        <option value="Proddatur">Proddatur</option>
+                        <option value="Pulivendla">Pulivendla</option>
+                        <option value="Punganuru">Punganuru</option>
+                        <option value="Puttaparthi">Puttaparthi</option>
+                        <option value="Puttur">Puttur</option>
+                        <option value="Rajahmundry">Rajahmundry</option>
+                        <option value="Ramachandrapuram">Ramachandrapuram</option>
+                        <option value="Ramanayyapeta">Ramanayyapeta</option>
+                        <option value="Ramapuram">Ramapuram</option>
+                        <option value="Rampachodavaram">Rampachodavaram</option>
+                        <option value="Rayachoti">Rayachoti</option>
+                        <option value="Rayadrug">Rayadrug</option>
+                        <option value="Razam">Razam</option>
+                        <option value="Razampeta">Razampeta</option>
+                        <option value="Razole">Razole</option>
+                        <option value="Renigunta">Renigunta</option>
+                        <option value="Repalle">Repalle</option>
+                        <option value="Salur">Salur</option>
+                        <option value="Samalkot">Samalkot</option>
+                        <option value="Sattenapalle">Sattenapalle</option>
+                        <option value="Singarayakonda">Singarayakonda</option>
+                        <option value="Sompeta">Sompeta</option>
+                        <option value="Srikakulam">Srikakulam</option>
+                        <option value="Srisailain">Srisailain</option>
+                        <option value="Suluru">Suluru</option>
+                        <option value="Tadepalle">Tadepalle</option>
+                        <option value="Tadepallegudem">Tadepallegudem</option>
+                        <option value="Tadpatri">Tadpatri</option>
+                        <option value="Tanuku">Tanuku</option>
+                        <option value="Tekkali">Tekkali</option>
+                        <option value="Tirumala">Tirumala</option>
+                        <option value="Tirupati">Tirupati</option>
+                        <option value="Tuni">Tuni</option>
+                        <option value="Uravakonda">Uravakonda</option>
+                        <option value="vadlamuru">vadlamuru</option>
+                        <option value="Vadlapudi">Vadlapudi</option>
+                        <option value="Venkatagiri">Venkatagiri</option>
+                        <option value="Vepagunta">Vepagunta</option>
+                        <option value="Vetapalem">Vetapalem</option>
+                        <option value="Vijayawada">Vijayawada</option>
+                        <option value="Vinukonda">Vinukonda</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Vizianagaram">Vizianagaram</option>
+                        <option value="Vizianagaram District">Vizianagaram District</option>
+                        <option value="Vuyyuru">Vuyyuru</option>
+                        <option value="West Godavari">West Godavari</option>
+                        <option value="Yanam">Yanam</option>
+                        <option value="Yanamalakuduru">Yanamalakuduru</option>
+                        <option value="Yarada">Yarada</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputfield">
+                <label>Phone Number</label>
+                <input type="text"  name="phone" class="input" id="phnnum">
+            </div>
+
+            <div class="inputfield">
+                <label>VOLUNTEER ID</label>
+                <input type="text" name="volid" class="input" id="vid">
+            </div>
+
+            <div class="inputfield">
+                <label>ADHAAR NO.</label>
+                <input type="text" name="aadhar" class="input" id="adharnum" required>
+            </div>
+
+            <div class="inputfield">
+                <label>Address</label>
+                <textarea name="address" class="textarea"></textarea>
+            </div>
+            <div class="inputfield">
+                <label>Postal Code</label>
+                <input type="text" name="postal" class="input" id="pincode">
+            </div>
+            <div class="regis">
+                <div class="inputfield">
+                    Already have an account? <a href="../templates/volunteer-login.php">Login here</a>
+                </div>
+            </div>
+
+            <div class="inputfield">
+                <input type="submit" name="submit" value="Submit" id="logo" class="btn">
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+
+</html>

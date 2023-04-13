@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(../images/sellcrop.jpeg);
+    padding: 0 20px;
+    margin-top: 5px;
+}
+
+.wrapper1 {
+    max-width: 800px;
+    width: 200%;
+    background: #fff;
+    background-image: url(../images/sellcrop.jpeg);
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(6, 30, 4, 0.125);
+    padding: 30px;
+    border-radius: 50px;
+    border-width: 3px;
+
+}
+
+.wrapper1 .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: rgb(40, 82, 40);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.wrapper1.title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.wrapper1 .form {
+    width: 100%;
+}
+
+.wrapper1 .form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+
+}
+
+.wrapper1 .form .inputfield label {
+    width: 200px;
+    color: black;
+    margin-right: 60px;
+    font-size: medium;
+    margin-left: 70px;
+}
+
+
+
+
+
+
+
+
+.wrapper1 .form .inputfield.input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    width: auto;
+}
+
+.wrapper1 .form .inputfield .btn {
+    width: 20%;
+    margin-left: 170px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 30px;
+    border: 0px;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    ;
+    color: #fff;
+    cursor: pointer;
+
+    outline: none;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.wrapper1 .form .inputfield .btn2 {
+    width: 60%;
+    margin-left: 20px;
+
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 0px;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    ;
+    color: #fff;
+    cursor: pointer;
+
+    outline: none;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.wrapper1 .form .inputfield .btn2:hover {
+    background: green;
+}
+
+.wrapper1 .form .inputfield:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+    .wrapper1.form .inputfield {
+
+        align-items: flex-start;
+    }
+
+    .wrapper1 .form .inputfield label {
+        margin-bottom: 5px;
+    }
+
+    .wrapper1 .form .inputfield.terms {
+        flex-direction: row;
+    }
+}

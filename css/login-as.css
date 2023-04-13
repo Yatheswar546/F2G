@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 25px 25px 45px 25px;
+    border-radius: 20px;
+}
+
+.container.box.input_box.custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2::before {
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    bottom: -8px;
+}
+
+.box .input_box {
+    width: 100%;
+    position: relative;
+}
+
+.box .input_box input[type="text"] {
+    width: 100%;
+    font-size: 20px;
+    margin: 16px 0px;
+    outline: none;
+    border-width: 0px 0px 2px 0px;
+    border-color: #669e79;
+}
+
+.box .input_box input[type="password"] {
+    width: 100%;
+    font-size: 26px;
+    margin: 16px 0px;
+    outline: none;
+    border-width: 0px 0px 2px 0px;
+    border-color: #669e79;
+}
+
+.box .input_box label {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 18px;
+    color: #0000009e;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+#naa_select {
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #669e79;
+    text-align: center;
+    font-size: larger;
+}
+
+#naa_select1 {
+    margin-left: 200px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: rgb(112, 156, 87);
+    text-align: center;
+    font-size: 18px;
+}
+
+.register {
+
+    padding-top: 30px;
+}
+
+.naa_label {
+    left: 0;
+    top: 12px;
+    font-size: 20px;
+    color: #0000009e;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.box .input_box input:focus+label,
+.box .input_box input:valid+label {
+    top: -7px;
+    font-size: 18px;
+    color: blue;
+}
+
+.box .input_box .password_checkbox {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box .input_box .password_checkbox p {
+    margin-left: 8px;
+}
+
+.box .signup_button {
+    width: 100%;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+
+    border: none;
+    padding: 8px 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.box .signup_button:active {
+    transform: scale3d(0.9, 0.9, 0.9);
+}
+
+ul {
+    list-style-type: none;
+    background: greenyellow;
+
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown {
+    display: block;
+    padding: 20px 25px;
+    color: aquamarine;
+    width: 10%;
+
+    position: absolute;
+    z-index: index 999;
+}
+
+.forgot_password {
+    text-decoration: none;
+    text-align: right;
+}

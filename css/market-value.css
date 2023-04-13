@@ -1,0 +1,11 @@
+.absoluteWrap {
+    position: absolute
+}
+
+.relativeWrap {
+    position: relative
+}
+
+.total {
+    color: red
+}

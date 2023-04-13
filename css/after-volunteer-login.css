@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+   
+    
+    padding: 0 20px;
+    margin-top: 0px;
+}
+.title{
+    text-align: center;
+    font-weight: 80%;
+    font-size: 100%;
+}
+.wrapper1 {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    
+    margin: 20px auto;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.125);
+    padding: 30px;
+    border-radius: 50px;
+    border-width: 3px;
+
+}
+
+.wrapper1 .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: rgb(40, 82, 40);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.wrapper1.title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.wrapper1 .reg .inputfield {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.wrapper1 .regis .inputfield {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.wrapper1 .form {
+    width: 100%;
+}
+
+.wrapper1 .form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper1 .form .inputfield label {
+    width: 200px;
+    color: black;
+    margin-right: 10px;
+    font: size 50px;
+}
+
+.wrapper1 .form .inputfield .input,
+.wrapper1 .form .inputfield .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper1 .form .inputfield .textarea {
+    width: 100%;
+    height: 125px;
+    resize: none;
+}
+
+.wrapper1 .form .inputfield .custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.wrapper1 .form .inputfield .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.wrapper1 .form .inputfield .custom_select1 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.wrapper1 .form .inputfield .custom_select2 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.wrapper1 .form .inputfield .custom_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+}
+
+.wrapper1 .form .inputfield .input:focus,
+.wrapper1 .form .inputfield .textarea:focus,
+.wrapper1 .form .inputfield .custom_select select:focus {
+    border: 1px solid black;
+}
+
+.wrapper1 .form .inputfield p {
+    font-size: 14px;
+    color: #757575;
+}
+
+
+
+
+
+.wrapper1 .form .inputfield.input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    width: auto;
+}
+
+.wrapper1.form .inputfield .btn {
+    width: 80%;
+    margin-left: 170px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 30px;
+    border: 0px;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    ;
+    color: #fff;
+    cursor: pointer;
+
+    outline: none;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.wrapper1 .form .inputfield .btn2 {
+    width: 70%;
+    margin-left: 60px;
+
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 30px;
+    border: 0px;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    ;
+    color: #fff;
+    cursor: pointer;
+
+    outline: none;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.wrapper1 .form .inputfield .btn:hover {
+    background: green;
+}
+
+.wrapper1 .form .inputfield:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+    .wrapper1 .form .inputfield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wrapper1 .form .inputfield label {
+        margin-bottom: 5px;
+    }
+
+    .wrapper1.form .inputfield.terms {
+        flex-direction: row;
+    }
+}
+.para-2{
+    text-align: right;
+    margin-top: 10px;
+}
