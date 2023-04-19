@@ -1,5 +1,6 @@
 <?php
     session_start();
+    
     if(isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin'){
     // Database Connection
     require_once('../config.php');
@@ -191,7 +192,7 @@
                                                 <td>$row[quantity]</td>
                                                 <td>$row[price]</td>
                                                 <td>$row[status]</td>
-                                                <td><a href='../templates/make-payment.html?id=$row[id]' class='edit'>Buy</a></td>
+                                                <td><a href='../templates/TxnTest.php?id=$row[far_id]' class='edit'>Buy</a></td>
                                                 <td><a href='./deleteproduct.php?id=$row[id]' class='delete'>Reject</a></td>
                                                 <td><span class='status delivered'>Pending</span></td>
                                             </tr>   
